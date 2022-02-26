@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-image: url('./assets/bg-main-desktop.png');
+    background-position: -20px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 88px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 88px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.premium-card h2, .premium-card .text-body1 {
+    color: hsl(20, 33%, 98%);
+}
+
+.text-body1 {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.text-body2 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.container {
+    width: 70%;
+}
+
+.logo-image {
+    margin: 50px 0;
+}
+
+.pattern-image {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    z-index: -1;
+}
+
+.premium-container {
+    background-color: hsl(244, 23%, 12%);
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 250px;
+    max-height: 600px;
+}
+
+.phone-illustration {
+    width: 312px;
+    position: relative;
+    top: -144px;
+    left: 110px;
+    z-index: 1;
+}
+
+.premium-pattern {
+    position: relative;
+    top: -200px;
+    left: 28px;
+    z-index: 0;
+}
+
+.premium-card {
+    background-color: hsl(12, 94%, 65%);
+    border-radius: 12px;
+    position: relative;
+    top: -550px;
+    left: 600px;
+    max-width: 446px;
+    padding: 58px 59px 48px 54px;
+}
+
+.premium-price {
+    color: hsl(20, 33%, 98%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0;
+}
+
+.premium-value {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 52px; 
+    margin: 5px 0;
+}
+
+.premium-month {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 20px 95px;
+    text-align: center;
+    border-radius: 12px;
+    width: 260px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 8px;
+}
+.button-image {
+    margin-right: 8px;
+    margin-bottom: -1px;
+}
+
+.button.ios {
+    background-color: hsl(244, 23%, 12%);
+    color:hsl(20, 33%, 98%);
+}
+
+.button.ios:hover {
+    background-color: hsl(177, 68%, 64%);
+}
+
+.button.android {
+    background-color: hsl(20, 33%, 98%);
+    color:hsl(244, 23%, 12%);
+}
+
+.button.android:hover {
+    background-color: hsl(33, 100%, 70%);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 220px;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-text {
+    width: 50%;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.footer-socials {
+    width: 20%;
+    text-align: right;
+}
+
+.footer-socials img {
+    margin: 0 5px;
+}
+
+.footer-text img {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    body {
+        background-image: url('./assets/bg-main-tablet.png');
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+        width: 85%;
+        letter-spacing: -1px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .pattern-image {
+        top: -35px;
+        right: -50px;
+    }
+
+    .text-body1 {
+        margin-top: 70px;
+        width: 80%;
+    }
+
+    .phone-illustration {
+        width: 270px;
+        top: -144px;
+        left: 40px;
+        z-index: 1;
+    } 
+    
+    .premium-pattern {
+        width: 280px;
+        position: relative;
+        top: -180px;
+        left: -55px;
+        z-index: 0;
+    }
+
+    .premium-card {
+        top: -420px;
+        left: 230px;
+        max-width: 290px;
+        z-index: 2;
+    }
+
+    .premium-card .text-body1 {
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .button {
+        width: 200px;
+        padding: 20px 65px;
+    }
+
+    .button.android {
+        margin-bottom: -5px;
+    }
+
+  }
+
+  @media only screen and (max-width: 375px) {
+    /* For tablets: */
+    body {
+        background-image: url('./assets/bg-main-mobile.png');
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .logo-image {
+        margin: 50px 0;
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 100%;
+        letter-spacing: -1px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .pattern-image {
+        display: none;
+    }
+
+    .text-body1 {
+        font-size: 16px;
+        line-height: 26px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .premium-container {
+        max-width: 375px;
+        border-radius: 12px;
+        margin-top: 150px;
+        max-height: 600px;
+    }
+
+    .phone-illustration {
+        width: 208px;
+        margin: 0 auto;
+        top: -90px;
+        left: 20%;
+        z-index: 1;
+    } 
+    
+    .premium-pattern {
+        width: 280px;
+        position: relative;
+        top: -430px;
+        left: 10%;
+        z-index: 0;
+    }
+
+    .premium-card {
+        top: -490px;
+        left: 0px;
+        max-width: 290px;
+        z-index: 2;
+        padding: 40px;
+    }
+
+    .premium-card .text-body1 {
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .button {
+        width: 200px;
+        padding: 20px 40px;
+    }
+
+    .button.android {
+        margin-bottom: -5px;
+    }
+
+    .footer {
+        position: relative;
+        top: 250px;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-text img {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    .footer-socials {
+        width: 30%;
+    }
+  }
